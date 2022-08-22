@@ -1,6 +1,6 @@
 :root{
     --color: #e6007e;
-    --txt: rgb(185, 185, 185)
+    --txt: #315B84;
 }
 
 *{
@@ -11,7 +11,12 @@
     color: var(--txt);
 }
 
-body    {
+p   {
+    padding: 0 3vw;
+    margin: 0px;
+}
+
+.content    {
     height: 100vw;
     width: 100vw;
 }
@@ -22,8 +27,8 @@ body    {
         height: 100vw;
         width: 40vw;
         background-image: url(./Images/halie-west-25xggax4bSA-unsplash.jpg);
-        background-position: center;
-         background-size: 175%;
+        /* background-position: center; */
+         background-size: 170%;
          background-repeat: no-repeat;
         }
         
@@ -32,9 +37,67 @@ body    {
             height: 100vw;
             width: 60vw;
             float: right;
-            background-color: black;            
+            background-color: #FFFBDE;    
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;        
         }
 
-        .fake-site-text, .sign-up-form  {
+        .fake-site-text, .sign-up-form, .create-account, .login {
             padding: 3vw;
+        }
+
+        p   {
+            padding: 2vw 0vw;
+        }
+
+        #letsgo {
+            padding: 0vw 3vw;
+        }
+
+        .fake-site-text, p {
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .sign-up-form {
+            display: grid;
+            grid-template-columns: 1fr 2fr ;  
+            padding-top: 1vw;
+     }
+
+     form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px 32px;
+    }
+    label   {
+        font-size: 12px;
+    }
+    
+    input   {
+            width: 350px;
+            background-color: #FFFBDE;
+            padding: 12px 6px;
+            border: 1px solid rgb(77, 77, 77, .7);
+            border-radius: 3px;
+            height: 25px;
+        }
+        
+        button {
+            background-color: #FFFBDE;
+            color: #F9AFC8;
+            font-weight: 700;
+            font-size: 22px;
+            padding: 10px 40px;
+            border: 2px solid #F9AFC8;
+            border-radius: 8px;
+        }
+
+        button:hover{
+            background-color: #F9AFC8;
+            color: var(--txt);
+        }
+
+        a   {
+            color: #F9AFC8;
         }
